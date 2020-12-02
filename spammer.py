@@ -18,7 +18,7 @@ def banner():
     print(r" \__ \  _/ _ \| |\/| | |\/| | _||   / ")
     print(r" |___/_|/_/ \_\_|  |_|_|  |_|___|_|_\ ")
     print()
-    print(r"     Spammer: github.com/cludeex      ")
+    print(r"     Spammer: github.com/Lol437    ")
     print(RESET_ALL)
 
 
