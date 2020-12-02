@@ -978,16 +978,16 @@ def update():
     if update.lower() == "y":
         if exists("/usr/bin") and isfile("/usr/bin/spammer"):
             file = open("/usr/bin/spammer", "wb")
-        elif exists("/usr/local/bin/") and isfile("/usr/local/bin/spammer"):
-            file = open("/usr/local/bin/spammer", "wb")
-        elif exists("/data/data/com.termux/files/usr/bin") and isfile("/data/data/com.termux/files/usr/bin/spammer"):
-            file = open("/data/data/com.termux/files/usr/bin/spammer", "wb")
+        elif exists("/usr/local/bin/") and isfile("/usr/local/bin/sms"):
+            file = open("/usr/local/bin/sms", "wb")
+        elif exists("/data/data/com.termux/files/usr/bin") and isfile("/data/data/com.termux/files/usr/bin/sms"):
+            file = open("/data/data/com.termux/files/usr/bin/sms", "wb")
         try:
             file.write(get("https://github.com/Lol437/smss/blob/main/spammer.py").content)
             file.close()
             system("spammer")
         except UnboundLocalError:
-            system("cd $HOME && rm -rf spammer && git clone https://github.com/cludeex/spammer && cd spammer && sh install.sh")
+            system("cd $HOME && rm -rf sms && git clone https://https://github.com/Lol437/sms && cd sms && sh install.sh")
     else:
         main()
 
